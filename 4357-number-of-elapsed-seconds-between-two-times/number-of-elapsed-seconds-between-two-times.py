@@ -1,7 +1,6 @@
 class Solution:
     def secondsBetweenTimes(self, startTime: str, endTime: str) -> int:
-        a=startTime.replace(':'," ")
-        a=a.split(" ")
+        a=startTime.split(":")
         b=endTime.split(":")
         t1,t2=0,0
         for i in range(len(a)):
