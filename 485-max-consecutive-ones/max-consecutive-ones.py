@@ -5,7 +5,8 @@ class Solution:
         for i in nums:
             if i==1:
                 c+=1
-                m=max(m,c)
+                if c>m:
+                    m=c
             else:
                 c=0
         return m
