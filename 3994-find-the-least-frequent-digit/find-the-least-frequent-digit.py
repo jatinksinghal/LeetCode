@@ -1,9 +1,8 @@
 class Solution:
     def getLeastFrequentDigit(self, n: int) -> int:
-        a=list(str(n))
-        b=sorted(list(set(a)))
+        b=sorted(list(set(list(str(n)))))
         d=[]
-        m=len(a)
+        m=len(str(n))
         f=b[0]
         for i in range(len(b)):
             c=str(n).count(b[i])
@@ -11,6 +10,4 @@ class Solution:
             if c<m:
                 m=c
                 f=b[i]
-        # if str(d).count(str(m))>1:
-        #     return
         return int(f)
