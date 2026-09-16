@@ -9,5 +9,6 @@ class Solution:
             elif i=="W":
                 w+=1
             if w==10:
+                return [t,w]
                 break
         return [t,w]
