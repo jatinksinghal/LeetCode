@@ -1,0 +1,14 @@
+class Solution:
+    def countMatches(self, items: list[list[str]], ruleKey: str, ruleValue: str) -> int:
+        a=0
+        for i in range(len(items)):
+            if ruleKey=="type":
+                if items[i][0]==ruleValue:
+                    a+=1
+            elif ruleKey=="color":
+                if items[i][1]==ruleValue:
+                    a+=1
+            else: 
+                if items[i][2]==ruleValue:
+                    a+=1
+        return a
