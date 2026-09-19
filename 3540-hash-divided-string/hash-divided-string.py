@@ -6,7 +6,6 @@ class Solution:
             t=0
             for i in range(len(a)):
                 w=ord(a[i])-97
-                print(w)
                 t+=w
             t=t%26
             cj.append(chr(97+t))
