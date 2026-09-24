@@ -1,8 +1,7 @@
 class Solution:
     def passwordStrength(self, password: str) -> int:
-        h,t={},0
-        for i in password:
-            h[i]=h.get(i,0)+1
+        h,t=set(password),0
+
         for i in h:
             if i in "abcdefghijklmnopqrstuvwxyz":
                 t+=1
