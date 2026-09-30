@@ -18,9 +18,7 @@ class Solution:
         print(f,h)
         f="".join(f)
         h="".join(h)
-        if f==h:
-            return True
-        else:
-            return False
+        return f==h
+        
       
         
